@@ -27,9 +27,19 @@ const tLenght= testimonialsData.length;
         <div className=''></div>
         <div></div>
         <img src={testimonialsData[selected].image} alt='testimonials'/>
+     {/* Arows Logic Functions */}
       <div className='Arrows'>
-        <img src={leftArrow} alt=''/>
-        <img src={rightArrow} alt=''/>
+        <img onClick={()=>
+        selected===0 ? setselected(tLenght - 1) :
+        setselected ((prev)=>prev-1)
+        } src={leftArrow} alt=''/>
+        <img onClick={()=>{
+          selected===tLenght-1 ? setselected(0) :
+          setselected((prev)=>prev+1)
+
+        }
+        
+        } src={rightArrow} alt=''/>
       </div>
       </div>
     </div>
