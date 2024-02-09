@@ -1,13 +1,16 @@
 import './App.css';
 import Hero from './components/Hero/Hero';
-import programs from './components/programes/programs';
+import Programs from './components/Program/Programs';
+import Reasons from './components/Reasons/Reasons';
 
 function App() {
   return (
     <div className="App">
         <Hero/>
-        <programes/>
-    </div>
+        <Programs/>
+        <Reasons/>
+       
+    </div>  
   );
 }
 
