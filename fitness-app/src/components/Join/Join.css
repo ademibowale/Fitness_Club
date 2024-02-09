@@ -38,7 +38,6 @@
  display: flex;
  gap:1rem;
  background-color:gray ;
- padding: 1rem 1rem;
  margin: 1rem;
 
 }
@@ -48,9 +47,10 @@
    border: none;
    outline: none;
    color: var(--lightgray);
-   margin: 1rem;
+  
     
 }
+ 
 
 ::placeholder{
     color: var(--lightgray);
@@ -63,8 +63,6 @@
     cursor: pointer;
     padding: 1rem 1rem;
     margin: 1rem;
-     outline: none;
+    outline: none;
     font-size: 1rem;
-   transition: all 0.3s ease; 
-
-}
+    transition: all 0.3s ease;}
