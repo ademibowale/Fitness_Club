@@ -9,6 +9,7 @@ import { motion } from "framer-motion"
 
 
 const transition={type: 'string',duration :3}
+const mobile = window.innerWidth<=768 ? true : false
 const Hero = () => {
     return (
         <div className='hero'>
@@ -16,7 +17,7 @@ const Hero = () => {
             <div className='left-h '>
                 <Header />
                 <div className='the-best-ad'>
-                    <motion.div initial={{left:'238px'}}
+                    <motion.div initial={{left: mobile?'178px':'238px'}}
                     whileInView={{left:'8px'}}
                     transition={{...transition,type:'tween'}}></motion.div>
                     <span>The best fitness club in the town</span>
@@ -53,21 +54,31 @@ const Hero = () => {
                 </div>
             </div>
             <div className='right-h '><button className="btn">Join Now</button>
-            <div className='heart-rate'>
+            <motion.div initial={{right:'-1rem'}}
+            whileInView={{right:'4rem'}}
+            transition={transition} className='heart-rate'>
                 <img src={Heart} alt="heart" />
                 <span>Heart Rate</span>
                 <span>115bpm</span>
-            </div>
+            </motion.div>
             {/* Hero images*/}
 <img src={hero_image} alt="hero_image" className='hero-image' />
-<img src={hero_image_back} alt="hero_image_back" className='hero-image_back' />        
-<div className='calories' >
+<motion.img initial={{right:'13rem'}}
+whileInView={{right:'21rem'}}
+transition={transition} src={hero_image_back} alt="hero_image_back" className='hero-image_back' />        
+  
+  {/* calories image page */}
+
+<motion.div 
+initial={{left:'-7rem'}}
+whileInView={{left:'8rem'}}
+transition={transition} className='calories' >
 <img src={calories} alt="calories" />
 <div>
 <span>Calories burned</span>
 <span>420 Kcl</span>
 </div>   
-</div>       
+</motion.div>       
 </div>
 </div>
 
