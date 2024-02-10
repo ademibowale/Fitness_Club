@@ -11,7 +11,7 @@ const transition={type: 'string',duration :3}
 const[selected , setselected] = useState(0);
 const tLenght= testimonialsData.length;
   return (
-    <div className='Testimonials'>
+    <div className='testimonials'>
       <div className='left-t'>
       <span>Testimonials</span>
       <span className='stroke-text'>What they</span>
