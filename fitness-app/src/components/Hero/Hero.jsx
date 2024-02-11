@@ -6,13 +6,15 @@ import hero_image from '../../assets/hero_image.png'
 import hero_image_back from '../../assets/hero_image_back.png'
 import calories from '../../assets/calories.png'
 import { motion } from "framer-motion"
+import Counter from 'react-number-counter'
+
 
 
 const transition={type: 'string',duration :3}
 const mobile = window.innerWidth<=768 ? true : false
 const Hero = () => {
     return (
-        <div className='hero'>
+        <div className='hero' id='home'>
             <div className='blur hero-blur'></div>
             <div className='left-h '>
                 <Header />
@@ -35,15 +37,21 @@ const Hero = () => {
                 </div>
                 <div className='figures'>
                     <div>
-                        <span>+180</span>
+                        <span >
+                        +140           
+                        </span>
                         <span>Expert Coaches</span>
                     </div>
                     <div>
-                        <span>+978</span>
+                        <span>+878
+                        
+                        </span>
                         <span>Members Joined</span>
                     </div>
                     <div>
-                        <span>+65</span>
+                        <span>
+                 +65          
+                        </span>
                         <span>Fitness Programs</span>
                     </div>
                 </div>
