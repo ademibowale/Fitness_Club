@@ -35,3 +35,43 @@
     cursor: pointer;
 
 }
+
+@media screen and (max-width: 768px){
+
+/* .header-menu>:nth-child(){
+    position: fixed;
+    right: 2rem;
+    z-index: 99;
+} */
+
+.header-menu{
+    flex-direction: column;
+    background-color: var(--appColor);
+    padding: 2rem;
+    position: fixed;
+    z-index: 99;
+    right: -1rem;
+    
+   
+       
+}
+
+.Bars{
+    width: 1.5rem;
+    height: 1.5rem;
+    background-color: var(--appColor);
+    padding: 0.5rem;
+    border-radius: 9px;
+ } 
+
+
+
+
+
+
+
+
+
+
+
+}
